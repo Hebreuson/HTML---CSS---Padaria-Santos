@@ -72,3 +72,8 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas alteraÃ
     height: 38px; /* tamanho*/
     margin-right: 2px; /* margem da direita*/
 }
+
+#bck-padaria > img {
+    width: 100%;
+
+}
