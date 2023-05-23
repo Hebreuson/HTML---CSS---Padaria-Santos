@@ -33,6 +33,42 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 
 #list-menu { /* nossa lista não ordenad, aqui mudaremos diretamente nossa lista*/
     display: flex; /* responsavel por colocar os itens na mesma linha (lado a lado)*/ 
-    margin-right: 1rem; /* margem da direita. 1 REM aquivale a 16px, ou seja */
+    margin-right: 1rem; /* margem da direita. 1 REM aquivale a 16px, ou seja podemos usa-lo  para facilitar a inserção dos pixels */
 }
 
+.item-menu-header{  /*nossas li que estão dentro do list menu, onde se encontram os nomes dos itens */
+    margin-right: 25px; /* margem da direita*/
+}
+
+.item-menu-header > a:houver { /* Nossas ço qie estão dentro do list menu, (a) nossa tag de linha*/
+    color: yellow;  /* aqui atribuidas uma cor*/
+    transition: 1s; /* e o tempo em que sera exibido ao passar o cursor*/
+}
+
+.item-menu-header > a { /*nossas li que estão dentro do list menu. (a) nossa tag de link que é*/
+    color: white; /* cor das letras*/
+    text-decoration: none; /* responsavel  por tirar o sublimado inferior que estava visivel*/
+    font-size: 12px; /* tamanho da letra*/
+
+}
+
+#btn-header { /* Nossa ID do botão de login*/
+    display: flex; /* responsavel por colocar os itens na mesma linha (lado a lado)*/
+}
+
+#btn-header > button { /* Aqui chamamos nossa ID e onde queremos fazer alterações, no caso */
+    padding: 8px; /* cuida do preenchimento*/
+    background-color: transparent; /* aqui deixamoso fundo do botão transparent, ou seja sem o fundo*/
+    border: none; /* none é usado para retirar algp, nesse caso a borda*/
+}
+
+#btn-header > button > a { /* estamos chamando aqui nossa tag de link para alterações*/
+    display: flex; /* responsavel por colocar os itens da mesma linha (lado a lado)*/
+    align-items: center; /* alinhar os itens para o centro*/
+}
+
+#btn-hearder > button > a > img { /* aqui estamos mexendo no icon do botao */
+    width: 38px; /* largura*/
+    height: 38px; /* tamanho*/
+    margin-right: 2px; /* margem da direita*/
+}
