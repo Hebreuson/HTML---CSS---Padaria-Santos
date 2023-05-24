@@ -1,3 +1,8 @@
+body{
+width: 100%;
+margin: 0 auto;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -65,15 +70,60 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 #btn-header > button > a { /* estamos chamando aqui nossa tag de link para alterações*/
     display: flex; /* responsavel por colocar os itens da mesma linha (lado a lado)*/
     align-items: center; /* alinhar os itens para o centro*/
+    color: white;
+    text-decoration: none;
 }
 
 #btn-hearder > button > a > img { /* aqui estamos mexendo no icon do botao */
     width: 38px; /* largura*/
     height: 38px; /* tamanho*/
     margin-right: 2px; /* margem da direita*/
+
 }
 
-#bck-padaria > img {
-    width: 100%;
+#img-destaque{ /*aqui chamamos a id que chamamos no html*/
+    padding: 260px; /* cuida do preenchimento */
+   background-image: url(img/padaria.webp); /* usada para inserir imagens de fundo*/
+    background-position: center; /* Aqui posicionamos nossa iomagem para o centro*/
+}
+
+.img-div{ /*aqui chamamos nossa class para aleração*/
+   padding: 25px; /*cuida do preenchimento*/
+    background-image: url(img/img-div.jpg); /* usadas para inserir imagem de fundo*/
+    background-position: center; /* aqui posicionamos nossa imagem para o centro*/
+    background-size: auto; /* backgroud-size: especifica o tamanho das imagens de fundo*/
+}
+
+
+#clients {
+  margin-top: 30px;
+    text-align: center;
+}
+
+.line {
+   margin-left: 640px;
+   width: 150px;
+    height: 2px;
+    border: 0px;
+    border-top: 1px solid rgb(170, 169, 169);
+    background-color: #7c7c7c;
+    
+}
+
+
+
+#clients-list{
+    justify-content: space-evenly;
+    display: flex;
+   align-items: center;
+   padding: 15px;
+   overflow: hidden;
+    margin-top: 20px;
+   margin-bottom: 40px;
+   
+}
+
+.clients-item > img{
+    align-items: center;
 
 }
