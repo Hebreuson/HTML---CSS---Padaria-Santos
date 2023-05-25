@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@font-face {
+@font-face {                 /*Utlizando o font-face para colocar uma fonte externa ao projeto*/ 
     font-family: 'cosmo';
-    src: url(fonte/Super\ Bubble.ttf) ;
+    src: url(fonte/spacetime-regular.ttf) ;
 }
 
 body{
@@ -15,7 +15,7 @@ margin: 0 auto;
     margin: 0;
     vertical-align: baseline;
     list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header{
@@ -23,23 +23,25 @@ header{
     align-items: center; /* alinhar os itens no nosso header para o centro*/
     justify-content: space-evenly;  /* tradução justificar-conteudo: espaço uniformente. align */
     padding: 15px; /* cuida do preenchimento*/
-    background-color: rgb(116, 77, 5); /* cor de fundo dp nosso cabeçalho/header*/
+    background-color: #bb4a1e; /* cor de fundo dp nosso cabeçalho/header*/
     overflow: hidden; /**/
     line-height: 200px; /* altura*/
     max-height: 200px;  /* Altura máxima*/
 }
 
 header > h1 {  /* selecionar aqui a cor da letra do nosso h1 ou seja,do nosso titulo*/
+    font-size: 40px;
     font-family: 'cosmo';
     color: white; /* chamamos a propriedade color e definimos uma cor em questão*/
 }
 
 header > img { /* aqui estamos chamando nossa imagem para ser atribuidas alterações*/
     width: 200px; /* largura da nossa imagem*/
-    height: 115px; /* tamanho da nossa imagem*/
+    height: 150px; /* tamanho da nossa imagem*/
 }
 
 #menu-header { /* njosso menu de navegação*/
+    
     display: flex; /* responsavel por colocar os itens na mesma linha (lado a lado)*/
     align-items: flex; /* alinhar os itens do nosso header para o centro*/
 }
