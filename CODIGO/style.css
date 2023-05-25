@@ -92,13 +92,15 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 }
 
 #img-destaque{ /*aqui chamamos a id que chamamos no html*/
-    padding: 260px; /* cuida do preenchimento */
+   
+    padding: 280px; /* cuida do preenchimento */
    background-image: url(img/padaria.webp); /* usada para inserir imagens de fundo*/
     background-position: center; /* Aqui posicionamos nossa iomagem para o centro*/
 }
 
 .img-div{ /*aqui chamamos nossa class para aleração*/
-   padding: 25px; /*cuida do preenchimento*/
+  
+    padding: 25px; /*cuida do preenchimento*/
     background-image: url(img/img-div.jpg); /* usadas para inserir imagem de fundo*/
     background-position: center; /* aqui posicionamos nossa imagem para o centro*/
     background-size: auto; /* backgroud-size: especifica o tamanho das imagens de fundo*/
