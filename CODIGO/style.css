@@ -1,4 +1,5 @@
 body{
+    background-color: #f3f3f3;
 width: 100%;
 margin: 0 auto;
 }
@@ -23,6 +24,7 @@ header{
 }
 
 header > h1 {  /* selecionar aqui a cor da letra do nosso h1 ou seja,do nosso titulo*/
+    font-family: ;
     color: white; /* chamamos a propriedade color e definimos uma cor em questÃ£o*/
 }
 
@@ -97,33 +99,30 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas alteraÃ
 
 #clients {
   margin-top: 30px;
-    text-align: center;
+  text-align: center;
 }
 
 .line {
-   margin-left: 640px;
-   width: 150px;
-    height: 2px;
-    border: 0px;
-    border-top: 1px solid rgb(170, 169, 169);
-    background-color: #7c7c7c;
-    
+  display: block;
+  margin-top: 0.05em;
+  margin-bottom: 0.05em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+  width: 200px;;
+ 
 }
 
-
-
 #clients-list{
-    justify-content: space-evenly;
-    display: flex;
+   justify-content: space-evenly;
+   display: flex;
    align-items: center;
    padding: 15px;
    overflow: hidden;
-    margin-top: 20px;
+   margin-top: 20px;
    margin-bottom: 40px;
-   
 }
 
-.clients-item > img{
-    align-items: center;
 
-}
+
