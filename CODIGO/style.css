@@ -1,3 +1,9 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'cosmo';
+    src: url(fonte/Super\ Bubble.ttf) ;
+}
+
 body{
     background-color: #f3f3f3;
 width: 100%;
@@ -24,7 +30,7 @@ header{
 }
 
 header > h1 {  /* selecionar aqui a cor da letra do nosso h1 ou seja,do nosso titulo*/
-    font-family: ;
+    font-family: 'cosmo';
     color: white; /* chamamos a propriedade color e definimos uma cor em questão*/
 }
 
