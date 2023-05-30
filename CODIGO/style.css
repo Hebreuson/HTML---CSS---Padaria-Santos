@@ -153,8 +153,8 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
     align-items: flex;
     display: flex;
     justify-content: space-evenly;
-    border-radius: 50px;
-    border: solid 3px  #505050;
+    border-radius: 50%;
+   
 }
 
 .title-products{
@@ -178,4 +178,34 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
     font-family: 'Ubuntu','sans-serif';
 }
 
+#featured-products > a:hover{ 
+    text-decoration: underline;
+    font-size: 22px;
+    transition: 1s;
+}
+
+#sobre-nos {
+    background-image: url(/CODIGO/img/fundo-sobre-nos.jpg);
+    background-repeat: no-repeat; /*aqui colocamos a função paraa imagem não seja reétoda */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 120px;
+}
+
+#sobre-nos > h3 {
+    color: white;  /* */
+    font-size: 64px;  /* */
+    text-align: center;  /* */
+    font-family: 'ubuntu', 'sans-serif';  /* */
+}
+ 
+#sobre-nos > p {
+    font-family: 'ubuntu', 'sans-serif';  /* */
+    font-weight: 500;  /* */
+    color: white;  /* */
+    font-size: 22px;  /* */
+    margin-top: 2em;  /* */ 
+    text-align: left;  /* */
+}
 
