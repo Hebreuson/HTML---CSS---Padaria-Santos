@@ -209,3 +209,40 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas alteraÃ
     text-align: left;  /* */
 }
 
+#contatos{
+    background-image: url(img/img-footer.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 80px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > h2 {
+    color: black bold;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.item-menu-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.item-menu-footer > img {
+    width: 34px;
+    height: 34px;
+}
+
+.item-menu-footer > p {
+    color: black bold;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
