@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@font-face {                 /*Utlizando o font-face para colocar uma fonte externa ao projeto*/ 
+    font-family: 'cosmo';
+    src: url(fonte/spacetime-regular.ttf) ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%; /*Largura*/
+    height: 100vh; /*Tamanho*/
+    background-image: url(img/bck-form.jpg); /*Aqui inserimos a imagem*/
+    background-position: center; /*Posicionamos a imagem ao centro*/
+    background-repeat: no-repeat; /*Colocamos para que a img nçai se repita*/
+    background-size: cover; /*Aqui atribuimos para que a imagem fique sobre toda nossa pagina*/
+    display: flex; /*Resposavel por colocar os itens na mesma linha (lado a lado)*/
+    align-items: center; /*Alinhar os itens para o centro*/
+    justify-content: center; /*justificar-conteudo ao centro*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{ /*Aqui estamos chamando nossa Class */
+    max-width: 1280px;/*Atribuimos aqui um tamanho maximo de largura que esse class ora exercer*/
+    margin: 0 auto;/* dizemos ao navegador que as margens superior e inferior são iguais a 0 e */ 
+}
+ 
+/*aqui chamamos nosso form para estilização  */
+
+form{
+    background-color: #f2dea9;/* colocamos uma cor de fundo*/
+    max-width: 500px;/*atribuimos aqui um tamanho maximo de largura que esse formulario não ira*/
+    height: 400px;/* largura do formulario*/
+    padding: 40px;/*precheenchimento*/
+    border-radius: 20px;/*arredondamento das bordas do formulario*/
+    
+}
+
+/* chamamos nosso texto para estilização */
+
+form h1{
+    margin-bottom: 90px;
+    text-align: center; /*alinhamos ao centro*/
+    font-size: 30px; /*tamanho da letra*/
+    color: black;/*cor da letra*/
+}
+
+/* chamamos nossa class que esta encabeçada nas div's dos nossos input e label */
+
+.input-single{
+position: relative; /*posição relativa*/
+margin: 20px 0; /* Dizemos ao navegador que as margens superior e inferior são iguais e 20 e 0*/
+}
+
+/* chamamos nossa label para estização */
+.input-single > label {
+    position: absolute; /*atribuimos uma posição absoluto em relação e o formuário*/
+    left: 0; /*zeramos a margin esquerda*/
+    bottom: 5px; /*margen inferior atribuimos para 5px*/
+    transition: all 0.2s; /*inserimos uma transição total para 0.2s*/
+    cursor: text; /*aqui e para quando passar o mouse, aparecer o indicador de texto*/
+}
+
+.input{ /* aqui chamamos nosso submit pi seka, botão para estiliza*/
+    width: 100%; /*tamanho da borda*/
+    border: 0;/*tamanho da borda*/
+    border-bottom: 2px solid black;/*estilização da borda inferior*/
+    padding: 5px;/*preenchimento do input*/
+    font-size: 17px;/*tamanho*/
+    outline: 0;/**/
+    background-color:#f2dea9;
+}
+
+form > .input-single > .input:focus ~ label,
+form .input-single .input:valid ~ label {
+  transform: translateY(-25px);/**/
+    font-size: 12px;/**/
+    color: black; /**/
+    
+}
+
+#btn-pop{
+    margin-top: 50px;
+    width: 100%; /*LARGURA*/
+    text-align: center; /*alinhamento ao centro*/
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    justify-content: space-evenly;  
+    padding: 15px; 
+}
+
+
+form input[type=submit]{ /*aqui estilizamos nosso botao de enviar*/
+    padding: 10px 40px; /*preenchimento da altura e largura do botão*/
+    border: 0;  /*aqui zeramos a borda*/
+    border-radius: 10px; /*colocamos aqui um arredondamento no botao*/
+    background-color: #505050; /*cor do botão*/
+    color: rgb(255, 255, 255); /*cor da letra (dentro do botao)*/
+    cursor: pointer; /*torna o botao em algo clicavel*/
+}

@@ -30,6 +30,8 @@ header{
 }
 
 header > h1 {  /* selecionar aqui a cor da letra do nosso h1 ou seja,do nosso titulo*/
+    background-image: url(img/user.png);
+    back
     font-size: 40px;
     font-family: 'cosmo';
     color: white; /* chamamos a propriedade color e definimos uma cor em questão*/
