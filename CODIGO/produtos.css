@@ -1,15 +1,3 @@
-@charset "UTF-8";
-@font-face {                 /*Utlizando o font-face para colocar uma fonte externa ao projeto*/ 
-    font-family: 'cosmo';
-    src: url(fonte/spacetime-regular.ttf) ;
-}
-
-body{
-    background-color: #f3f3f3;
-width: 100%;
-margin: 0 auto;
-}
-
 *{
     padding: 0;
     margin: 0;
@@ -28,7 +16,6 @@ header{
     line-height: 200px; /* altura*/
     max-height: 200px;  /* Altura máxima*/
 }
-
 header > h1 {  /* selecionar aqui a cor da letra do nosso h1 ou seja,do nosso titulo*/
    
     font-size: 40px;
@@ -92,122 +79,55 @@ header > img { /* aqui estamos chamando nossa imagem para ser atribuidas altera�
 
 }
 
-#img-destaque{ /*aqui chamamos a id que chamamos no html*/
+#featured-products{
+    background: linear-gradient(180deg, #f4CEAF 8.53%, rgb(244,200, 175, 0) 100%);
+    padding: 30px;
+    
+   }
    
-    padding: 280px; /* cuida do preenchimento */
-   background-image: url(img/padaria.webp); /* usada para inserir imagens de fundo*/
-    background-position: center; /* Aqui posicionamos nossa iomagem para o centro*/
-}
-
-.img-div{ /*aqui chamamos nossa class para aleração*/
-  
-    padding: 25px; /*cuida do preenchimento*/
-    background-image: url(img/img-div.jpg); /* usadas para inserir imagem de fundo*/
-    background-position: center; /* aqui posicionamos nossa imagem para o centro*/
-    background-size: auto; /* backgroud-size: especifica o tamanho das imagens de fundo*/
-}
-
-
-#clients {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.line {
-  display: block;
-  margin-top: 0.05em;
-  margin-bottom: 0.05em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: solid;
-  border-width: 1px;
-  width: 200px;;
- 
-}
-
-#clients-list{
-   justify-content: space-evenly;
-   display: flex;
-   align-items: center;
-   padding: 15px;
-   overflow: hidden;
-   margin-top: 20px;
-   margin-bottom: 40px;
-}
-
- #featured-products{
- background: linear-gradient(180deg, #f4CEAF 8.53%, rgb(244,200, 175, 0) 100%);
- padding: 30px;
- 
-}
-
-.products{
-    margin-top: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.img-product{
-    width: 300px;
-    height: 250px;
-    align-items: flex;
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 50%;
+   .products{
+       margin-top: 3em;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+   }
    
-}
-
-.title-products{
-    margin-top: 10px;
-    text-align: center;
-    font-size: 22px;
-    
-
-}
-
-#featured-products > h2 {
-    text-align: center;
-    
-}
-
-#featured-products > a {
-    text-decoration: none;
-    color: red;
-    font-size: 20px;
-    
-}
-
-#featured-products > a:hover{ 
-    text-decoration: underline;
-    font-size: 22px;
-    transition: 1s;
-}
-
-#sobre-nos {
-    background-image: url(/CODIGO/img/fundo-sobre-nos.jpg);
-    background-repeat: no-repeat; /*aqui colocamos a função paraa imagem não seja reétoda */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    padding: 120px;
-}
-
-#sobre-nos > h3 {
-    color: white;  /* */
-    font-size: 64px;  /* */
-    text-align: center;  /* */
-    
-}
- 
-#sobre-nos > p {
-    
-    font-weight: 500;  /* */
-    color: white;  /* */
-    font-size: 22px;  /* */
-    margin-top: 2em;  /* */ 
-    text-align: left;  /* */
-}
+   .img-product{
+       width: 300px;
+       height: 250px;
+       align-items: flex;
+       display: flex;
+       justify-content: space-evenly;
+       border-radius: 50%;
+      
+   }
+   
+   .title-products{
+       margin-top: 10px;
+       text-align: center;
+       font-size: 22px;
+       
+   
+   }
+   
+   #featured-products > h2 {
+       text-align: center;
+       
+   }
+   
+   #featured-products > a {
+       text-decoration: none;
+       color: red;
+       font-size: 20px;
+       
+   }
+   
+   #featured-products > a:hover{ 
+       text-decoration: underline;
+       font-size: 22px;
+       transition: 1s;
+   }
+   
 
 #contatos{
     background-image: url(img/img-footer.jpg);
@@ -283,4 +203,13 @@ footer > h2 {
     font-size: 24px;
     font-weight: bold;
     margin-left: 10px;
+}
+
+hr{
+    margin-top: 50px;
+    height: 8px;
+    background-color: #505050);
+    background-image: linear-gradient(90deg, #faa1a1, transparent);
+    border: 0;
+    height: 2px;
 }

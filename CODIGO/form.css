@@ -33,12 +33,13 @@ body{
 /*aqui chamamos nosso form para estilização  */
 
 form{
+   opacity: 90%;
     background-color: #f2dea9;/* colocamos uma cor de fundo*/
     max-width: 500px;/*atribuimos aqui um tamanho maximo de largura que esse formulario não ira*/
     height: 400px;/* largura do formulario*/
     padding: 40px;/*precheenchimento*/
     border-radius: 20px;/*arredondamento das bordas do formulario*/
-    
+
 }
 
 /* chamamos nosso texto para estilização */
@@ -48,6 +49,18 @@ form h1{
     text-align: center; /*alinhamos ao centro*/
     font-size: 30px; /*tamanho da letra*/
     color: black;/*cor da letra*/
+}
+
+#userImage{
+    opacity: 88%;
+    margin-left: 100px;
+    margin-top: -70px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* chamamos nossa class que esta encabeçada nas div's dos nossos input e label */
@@ -80,7 +93,7 @@ form > .input-single > .input:focus ~ label,
 form .input-single .input:valid ~ label {
   transform: translateY(-25px);/**/
     font-size: 12px;/**/
-    color: black; /**/
+    color: #ffffff; /**/
     
 }
 
