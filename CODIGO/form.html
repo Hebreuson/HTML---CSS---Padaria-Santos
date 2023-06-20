@@ -10,18 +10,18 @@
 <body>
     <section class="form-container"> <!--damos um nome para a nossa section a form conteiner-->
         <div class="container"> <!--abrimos uma div para que possamos destacar nosso formulário-->
-            <form>
+            <form method="post" action="../site padaria.php">
             
             <h1>LOGIN</h1>
                 <img id="userImage" src="img/user-login.png" alt="imagem de usuario">
 
             <div class="input-single">
-                <input type="text" name="" id="nome-box" class="input" autocomplete="off" required>
-                <label for="nome-box">User</label>
+                <input type="text" name="nome" id="nome" class="input" autocomplete="off" required>
+                <label for="nome">User</label>
             </div>
 
             <div class="input-single">
-                <input type="password" name="" id="email-box" class="input" autocomplete="off" required>
+                <input type="password" name="email" id="email" class="input" autocomplete="off" required>
                 <label for="senha" >password</label>
             </div>
 
